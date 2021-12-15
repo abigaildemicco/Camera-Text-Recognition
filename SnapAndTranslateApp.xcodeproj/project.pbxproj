@@ -11,6 +11,13 @@
 		5108D926276A443E00E8E982 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5108D925276A443E00E8E982 /* ContentView.swift */; };
 		5108D928276A443F00E8E982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5108D927276A443F00E8E982 /* Assets.xcassets */; };
 		5108D92B276A443F00E8E982 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5108D92A276A443F00E8E982 /* Preview Assets.xcassets */; };
+		5108D932276A450000E8E982 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5108D931276A450000E8E982 /* Classifier.swift */; };
+		5108D934276A452800E8E982 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5108D933276A452800E8E982 /* ImageClassifier.swift */; };
+		5108D936276A454F00E8E982 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5108D935276A454F00E8E982 /* ImagePickerView.swift */; };
+		5108D938276A457500E8E982 /* TextRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5108D937276A457500E8E982 /* TextRecognition.swift */; };
+		5108D93A276A459700E8E982 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5108D939276A459700E8E982 /* TextRecognizer.swift */; };
+		5108D93C276A45B700E8E982 /* TextTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5108D93B276A45B700E8E982 /* TextTranslation.swift */; };
+		5108D93E276A462F00E8E982 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5108D93D276A462F00E8E982 /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		5108D925276A443E00E8E982 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5108D927276A443F00E8E982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5108D92A276A443F00E8E982 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5108D931276A450000E8E982 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		5108D933276A452800E8E982 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		5108D935276A454F00E8E982 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		5108D937276A457500E8E982 /* TextRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognition.swift; sourceTree = "<group>"; };
+		5108D939276A459700E8E982 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		5108D93B276A45B700E8E982 /* TextTranslation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTranslation.swift; sourceTree = "<group>"; };
+		5108D93D276A462F00E8E982 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,13 @@
 		5108D922276A443E00E8E982 /* SnapAndTranslateApp */ = {
 			isa = PBXGroup;
 			children = (
+				5108D93D276A462F00E8E982 /* MobileNetV2.mlmodel */,
+				5108D93B276A45B700E8E982 /* TextTranslation.swift */,
+				5108D939276A459700E8E982 /* TextRecognizer.swift */,
+				5108D937276A457500E8E982 /* TextRecognition.swift */,
+				5108D935276A454F00E8E982 /* ImagePickerView.swift */,
+				5108D933276A452800E8E982 /* ImageClassifier.swift */,
+				5108D931276A450000E8E982 /* Classifier.swift */,
 				5108D923276A443E00E8E982 /* SnapAndTranslateAppApp.swift */,
 				5108D925276A443E00E8E982 /* ContentView.swift */,
 				5108D927276A443F00E8E982 /* Assets.xcassets */,
@@ -137,8 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5108D93E276A462F00E8E982 /* MobileNetV2.mlmodel in Sources */,
+				5108D934276A452800E8E982 /* ImageClassifier.swift in Sources */,
 				5108D926276A443E00E8E982 /* ContentView.swift in Sources */,
+				5108D932276A450000E8E982 /* Classifier.swift in Sources */,
 				5108D924276A443E00E8E982 /* SnapAndTranslateAppApp.swift in Sources */,
+				5108D93C276A45B700E8E982 /* TextTranslation.swift in Sources */,
+				5108D938276A457500E8E982 /* TextRecognition.swift in Sources */,
+				5108D93A276A459700E8E982 /* TextRecognizer.swift in Sources */,
+				5108D936276A454F00E8E982 /* ImagePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +300,8 @@
 				DEVELOPMENT_TEAM = W86559Y4YC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera to take a picture";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need photo library to choose a picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +332,8 @@
 				DEVELOPMENT_TEAM = W86559Y4YC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need camera to take a picture";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need photo library to choose a picture";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
