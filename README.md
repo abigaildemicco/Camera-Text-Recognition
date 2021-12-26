@@ -13,3 +13,4 @@ Language Identification
 # Coming soon
 Object recognition
 Language Translation
+Voice aloud reader
