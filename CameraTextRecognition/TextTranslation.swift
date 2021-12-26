@@ -1,6 +1,6 @@
 //
 //  TextTranslation.swift
-//  SnapAndTranslateApp
+//  CameraTextRecognition
 //
 //  Created by Abigail De Micco on 15/12/21.
 //

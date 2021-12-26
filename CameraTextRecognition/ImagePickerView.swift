@@ -1,6 +1,6 @@
 //
 //  ImagePickerView.swift
-//  SnapAndTranslateApp
+//  CameraTextRecognition
 //
 //  Created by Abigail De Micco on 15/12/21.
 //
@@ -13,11 +13,10 @@ struct ImagePicker: UIViewControllerRepresentable {
     
     @Binding var uiImage: UIImage?
     @Binding var isPresenting: Bool
-    @Binding var sourceType: UIImagePickerController.SourceType
     
     func makeUIViewController(context: Context) -> UIImagePickerController {
         let imagePicker = UIImagePickerController()
-        imagePicker.sourceType = sourceType
+        imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = context.coordinator
         return imagePicker
     }
