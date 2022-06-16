@@ -79,6 +79,8 @@ struct CameraView: View {
     
     @State var isPresenting: Bool = false
     
+    @Binding var textMode: Bool
+    
     @Environment(\.presentationMode) var presentationMode
     
     var captureButton: some View {
@@ -171,19 +173,22 @@ struct CameraView: View {
                                         )
                                         .animation(.easeInOut)
                                     
-                                    Text("Allinea il testo")
-                                        .foregroundColor(.white)
-                                        .opacity(0.8)
-                                        .padding(10)
-                                        .background(RoundedRectangle(cornerRadius: 5, style: .continuous)
-                                                        .foregroundColor(.black)
-                                                        .opacity(0.6))
+                                    if self.textMode {
+                                        Text("Align the text")
+                                            .foregroundColor(.white)
+                                            .opacity(0.8)
+                                            .padding(10)
+                                            .background(RoundedRectangle(cornerRadius: 5, style: .continuous)
+                                                .foregroundColor(.black)
+                                                .opacity(0.6))
+                                    }
+                                        
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .stroke(Color.pink, lineWidth: 5)
+                                            .opacity(0.4)
+                                            .padding(.horizontal, 20)
+                                            .padding(.vertical, 60)
                                     
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .stroke(Color.pink, lineWidth: 5)
-                                        .opacity(0.4)
-                                        .padding(.horizontal, 20)
-                                        .padding(.vertical, 60)
                                 }
                                 
                                 
@@ -192,21 +197,31 @@ struct CameraView: View {
                                 HStack {
                                     Spacer()
                                     
-                                    Text("Testo")
+                                    Text("Text")
                                         .foregroundColor(.white)
                                         .multilineTextAlignment(.center)
                                         .padding()
                                         .frame(width: 100, height: 40)
                                         .background(RoundedRectangle(cornerRadius: 3, style: .continuous)
-                                                        .foregroundColor(.pink))
+                                            .foregroundColor(self.textMode ? .pink : .gray))
+                                        .onTapGesture {
+                                            if !self.textMode {
+                                                self.textMode = true;
+                                            }
+                                        }
                                     
-                                    Text("Oggetto")
+                                    Text("Object")
                                         .foregroundColor(.white)
                                         .multilineTextAlignment(.center)
                                         .padding()
                                         .frame(width: 100, height: 40)
                                         .background(RoundedRectangle(cornerRadius: 3, style: .continuous)
-                                                        .foregroundColor(.gray))
+                                            .foregroundColor(textMode ? .gray : .pink))
+                                        .onTapGesture {
+                                            if self.textMode {
+                                                self.textMode = false;
+                                            }
+                                        }
                                     Spacer()
                                 }
                                 .padding()

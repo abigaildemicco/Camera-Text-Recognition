@@ -16,10 +16,9 @@ class ImageClassifier: ObservableObject {
     }
         
     // Intent(s)
-    func detect(uiImage: UIImage) {
-        guard let ciImage = CIImage (image: uiImage) else { return }
-        classifier.detect(ciImage: ciImage)
-        
+    func detect(uiImage: UIImage) -> String {
+        guard let ciImage = CIImage (image: uiImage) else { return "" }
+        return classifier.detect(ciImage: ciImage)
     }
         
 }
